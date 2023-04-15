@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --cor_primaria: #191919;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #0587ab;
+    --cor-hover: #00b8e4;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    background-color:var(--cor_primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+/* i#burguer {
+    background-color: #574b4b80;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+} */
+
+/* i#burguer:hover {
+    background-color: var(--cor-secundaria);
+} */
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5.4% 15%;
+    display: flex;
+    align-items: center;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.título-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__conteudo__texto__curriculo li {
+    margin-bottom: 12px;
+    padding: 1%;
+    
+}
+
+.apresentacao__conteudo__textostrong {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;  
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: var(--size-24);
+}
+
+.apresentacao__links__navegacao {
+    
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    border: 3px solid var(--cor-terciaria);
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0 ;  
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+    padding: 4%;
+}
+
+i#botaogit {
+    width: 140px;
+    
+}
+
+i#botaolinkedin {
+    width: 140px;
+}
+
+i#botaoinstagram {
+    width: 140px;
+}
+
+i#botaotwitter {
+    width: 140px;
+}
+
+i#botaowhatsapp {
+    width: 130px;
+}
+
+i#botaoemail {
+    width: 130px;
+}
+
+.apresentacao__links__curriculo{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__links__email {
+    background-color: var(--cor_primaria);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid var(--cor-terciaria);
+    width: 65%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;  
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__email:hover {
+    background-color: var(--cor-hover);
+    padding: 4%;
+    cursor: pointer;
+}
+
+.apresentacao__gif {
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 1.25rem;      
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor_primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    /* i#burguer {
+        
+    } */
+
+    .cabecalho__menu {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    i#botaogit {
+        width: 70px;
+        
+    }
+    
+    i#botaolinkedin {
+        width: 70px;
+    }
+    
+    i#botaoinstagram {
+        width: 70px;
+    }
+    
+    i#botaotwitter {
+        width: 70px;
+    }
+    
+    i#botaowhatsapp {
+        width: 70px;
+    }
+    
+    i#botaoemail {
+        width: 70px;
+    }
+
+    .apresentacao__gif {
+        width: 80%;
+    }
+
+}
